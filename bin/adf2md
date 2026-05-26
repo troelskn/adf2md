@@ -223,6 +223,7 @@ const Converter = (() => {
 	return module.exports;
 })();
 
+const fs = require('fs');
 function readStdin() {
 	return new Promise((resolve, reject) => {
 		let data = '';
@@ -231,6 +232,13 @@ function readStdin() {
 		process.stdin.on('end', () => resolve(data));
 		process.stdin.on('error', reject);
 	});
+}
+
+function readInput(arg) {
+	if (arg && arg !== '-') {
+		return Promise.resolve(fs.readFileSync(arg, 'utf8'));
+	}
+	return readStdin();
 }
 
 function extract(input) {
@@ -242,9 +250,9 @@ function extract(input) {
 
 (async () => {
 	try {
-		const raw = await readStdin();
+		const raw = await readInput(process.argv[2]);
 		if (!raw.trim()) {
-			process.stderr.write('error: no input on stdin\n');
+			process.stderr.write('error: no input\n');
 			process.exit(1);
 		}
 
