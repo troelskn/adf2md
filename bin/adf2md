@@ -33,13 +33,8 @@ const Converter = (() => {
 				return `> ${content.map(node => _convert(node, warnings)).join('\n> ')}`;
 
 			case 'bulletList':
-			case 'orderedList': {
-				let counter = (node.attrs && node.attrs.order) || 1;
-				return content.map((subNode) => {
-					const symbol = node.type === 'bulletList' ? '*' : `${counter++}.`;
-					return _convertListItem(subNode, symbol, warnings);
-				}).join('\n');
-			}
+			case 'orderedList':
+				return _convertList(node, warnings);
 
 			case 'listItem':
 				return _convertListItem(node, '*', warnings);
@@ -116,6 +111,15 @@ const Converter = (() => {
 				warnings.add(node.type);
 				return '';
 		}
+	}
+
+	function _convertList(node, warnings) {
+		const content = node.content || [];
+		let counter = (node.attrs && node.attrs.order) || 1;
+		return content.map((subNode) => {
+			const symbol = node.type === 'bulletList' ? '*' : `${counter++}.`;
+			return _convertListItem(subNode, symbol, warnings);
+		}).join('\n');
 	}
 
 	function _convertListItem(node, symbol, warnings) {
