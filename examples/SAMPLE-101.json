@@ -1,0 +1,505 @@
+{
+  "changelog": null,
+  "editmeta": null,
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "fields": {
+    "assignee": {
+      "accountId": "557058:00000000-0000-0000-0000-000000000001",
+      "accountType": "atlassian",
+      "active": true,
+      "avatarUrls": {
+        "16x16": "https://example.com/avatar.png",
+        "24x24": "https://example.com/avatar.png",
+        "32x32": "https://example.com/avatar.png",
+        "48x48": "https://example.com/avatar.png"
+      },
+      "displayName": "Example User",
+      "emailAddress": "user@example.com",
+      "self": "https://example.atlassian.net/rest/api/3/user?accountId=557058%3A00000000-0000-0000-0000-000000000001",
+      "timeZone": "UTC"
+    },
+    "description": {
+      "content": [
+        {
+          "attrs": {
+            "localId": "a22e7ffb1850"
+          },
+          "content": [
+            {
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ],
+              "text": "Subject",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "attrs": {
+            "localId": "6cf9f05f490d"
+          },
+          "content": [
+            {
+              "text": "Currently these draft documents accumulate in the database and are not cleaned up automatically. Authors typically take ",
+              "type": "text"
+            },
+            {
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ],
+              "text": "up to 30 days",
+              "type": "text"
+            },
+            {
+              "text": " to either publish or abandon a draft, so we want the system to automatically archive such drafts after this period to keep listings tidy.",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "attrs": {
+            "localId": "2319d84841f3"
+          },
+          "content": [
+            {
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ],
+              "text": "Solution",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "attrs": {
+            "localId": "04cc80d3d666",
+            "order": 1
+          },
+          "content": [
+            {
+              "attrs": {
+                "localId": "46a35c4143b3"
+              },
+              "content": [
+                {
+                  "attrs": {
+                    "localId": "33fd301dba13"
+                  },
+                  "content": [
+                    {
+                      "text": "Apply the logic only to documents where the ",
+                      "type": "text"
+                    },
+                    {
+                      "marks": [
+                        {
+                          "type": "strong"
+                        }
+                      ],
+                      "text": "status = draft",
+                      "type": "text"
+                    },
+                    {
+                      "text": ".",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                },
+                {
+                  "attrs": {
+                    "localId": "a87125ce491f"
+                  },
+                  "content": [
+                    {
+                      "attrs": {
+                        "localId": "c0cb34f8000a"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "599f0d0efa6c"
+                          },
+                          "content": [
+                            {
+                              "text": "The rule should apply once the document has been ",
+                              "type": "text"
+                            },
+                            {
+                              "marks": [
+                                {
+                                  "type": "strong"
+                                }
+                              ],
+                              "text": "created ",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    }
+                  ],
+                  "type": "bulletList"
+                }
+              ],
+              "type": "listItem"
+            },
+            {
+              "attrs": {
+                "localId": "076c10fa1cbb"
+              },
+              "content": [
+                {
+                  "attrs": {
+                    "localId": "fce4707dfae6"
+                  },
+                  "content": [
+                    {
+                      "text": "Create a background job / scheduled task that checks documents with:",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                },
+                {
+                  "attrs": {
+                    "localId": "98444edfbaa6"
+                  },
+                  "content": [
+                    {
+                      "attrs": {
+                        "localId": "8e5585eddb07"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "8d3fc6041843"
+                          },
+                          "content": [
+                            {
+                              "marks": [
+                                {
+                                  "type": "code"
+                                }
+                              ],
+                              "text": "status = draft",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "ee558fe8654f"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "1bfe6b27e3cd"
+                          },
+                          "content": [
+                            {
+                              "marks": [
+                                {
+                                  "type": "code"
+                                }
+                              ],
+                              "text": "visibility = private",
+                              "type": "text"
+                            },
+                            {
+                              "text": " or hidden",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "387987330842"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "60693f89250f"
+                          },
+                          "content": [
+                            {
+                              "marks": [
+                                {
+                                  "type": "code"
+                                }
+                              ],
+                              "text": "modified_at",
+                              "type": "text"
+                            },
+                            {
+                              "text": " timestamp older than ",
+                              "type": "text"
+                            },
+                            {
+                              "marks": [
+                                {
+                                  "type": "strong"
+                                }
+                              ],
+                              "text": "30 days",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    }
+                  ],
+                  "type": "bulletList"
+                }
+              ],
+              "type": "listItem"
+            },
+            {
+              "attrs": {
+                "localId": "58f7c9560f30"
+              },
+              "content": [
+                {
+                  "attrs": {
+                    "localId": "5149b1697cae"
+                  },
+                  "content": [
+                    {
+                      "text": "The job should only update documents that:",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                },
+                {
+                  "attrs": {
+                    "localId": "a22aa051f214"
+                  },
+                  "content": [
+                    {
+                      "attrs": {
+                        "localId": "4e810709f2a7"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "61aca6720014"
+                          },
+                          "content": [
+                            {
+                              "text": "Are still in ",
+                              "type": "text"
+                            },
+                            {
+                              "marks": [
+                                {
+                                  "type": "strong"
+                                }
+                              ],
+                              "text": "Draft or Private",
+                              "type": "text"
+                            },
+                            {
+                              "text": " status",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "a39b79f45ad9"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "3b99e9e9b567"
+                          },
+                          "content": [
+                            {
+                              "text": "Have not already been marked ",
+                              "type": "text"
+                            },
+                            {
+                              "marks": [
+                                {
+                                  "type": "strong"
+                                }
+                              ],
+                              "text": "Locked",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "f785403f5a03"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "863b4517d448"
+                          },
+                          "content": [
+                            {
+                              "text": "Store the archive timestamp when the status is updated.",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    }
+                  ],
+                  "type": "bulletList"
+                }
+              ],
+              "type": "listItem"
+            }
+          ],
+          "type": "orderedList"
+        },
+        {
+          "attrs": {
+            "localId": "44a29bacea5f"
+          },
+          "content": [
+            {
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ],
+              "text": "Expected result",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "attrs": {
+            "localId": "3871fa9d4f5f",
+            "order": 1
+          },
+          "content": [
+            {
+              "attrs": {
+                "localId": "37fad454307d"
+              },
+              "content": [
+                {
+                  "attrs": {
+                    "localId": "287811be72e0"
+                  },
+                  "content": [
+                    {
+                      "text": "Documents created in ",
+                      "type": "text"
+                    },
+                    {
+                      "marks": [
+                        {
+                          "type": "strong"
+                        }
+                      ],
+                      "text": "draft status",
+                      "type": "text"
+                    },
+                    {
+                      "text": " are automatically marked as ",
+                      "type": "text"
+                    },
+                    {
+                      "marks": [
+                        {
+                          "type": "strong"
+                        }
+                      ],
+                      "text": "Archived 30 days after they were last modified",
+                      "type": "text"
+                    },
+                    {
+                      "text": ".",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "type": "listItem"
+            }
+          ],
+          "type": "orderedList"
+        }
+      ],
+      "type": "doc",
+      "version": 1
+    },
+    "issuetype": {
+      "avatarId": 10318,
+      "description": "Tasks track small, distinct pieces of work.",
+      "entityId": "3e0f6449-ea59-42c3-89fe-d7ee63d0bfd2",
+      "hierarchyLevel": 0,
+      "iconUrl": "https://example.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+      "id": "10001",
+      "name": "Task",
+      "self": "https://example.atlassian.net/rest/api/3/issuetype/10001",
+      "subtask": false
+    },
+    "status": {
+      "description": "",
+      "iconUrl": "https://example.atlassian.net/",
+      "id": "10007",
+      "name": "Review",
+      "self": "https://example.atlassian.net/rest/api/3/status/10007",
+      "statusCategory": {
+        "colorName": "yellow",
+        "id": 4,
+        "key": "indeterminate",
+        "name": "In Progress",
+        "self": "https://example.atlassian.net/rest/api/3/statuscategory/4"
+      }
+    },
+    "summary": "[BE] Automatically archive draft documents older than 30 days"
+  },
+  "fieldsToInclude": null,
+  "id": "1001",
+  "key": "SAMPLE-101",
+  "names": null,
+  "operations": null,
+  "properties": null,
+  "renderedFields": null,
+  "schema": null,
+  "self": "https://example.atlassian.net/rest/api/3/issue/1001",
+  "transitions": null,
+  "versionedRepresentations": null
+}

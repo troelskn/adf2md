@@ -1,0 +1,536 @@
+{
+  "changelog": null,
+  "editmeta": null,
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "fields": {
+    "assignee": {
+      "accountId": "557058:00000000-0000-0000-0000-000000000001",
+      "accountType": "atlassian",
+      "active": true,
+      "avatarUrls": {
+        "16x16": "https://example.com/avatar.png",
+        "24x24": "https://example.com/avatar.png",
+        "32x32": "https://example.com/avatar.png",
+        "48x48": "https://example.com/avatar.png"
+      },
+      "displayName": "Example User",
+      "emailAddress": "user@example.com",
+      "self": "https://example.atlassian.net/rest/api/3/user?accountId=557058%3A00000000-0000-0000-0000-000000000001",
+      "timeZone": "UTC"
+    },
+    "description": {
+      "content": [
+        {
+          "attrs": {
+            "localId": "aa5e39a9c010"
+          },
+          "content": [
+            {
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ],
+              "text": "Subject",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "attrs": {
+            "localId": "e22d40a31ea9"
+          },
+          "content": [
+            {
+              "text": "The project list currently shows multiple entries for the same project due to different versions and tags, which makes it harder to get a clear overview. The list should be grouped by default (one row per project with the latest activity timestamp). However, users should be able to switch to a detailed view where projects are displayed based on creation date, showing all entries without grouping.",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "attrs": {
+            "localId": "811312b14832"
+          },
+          "content": [
+            {
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ],
+              "text": "Solution",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "attrs": {
+            "localId": "a165be447806",
+            "order": 1
+          },
+          "content": [
+            {
+              "attrs": {
+                "localId": "79f3bcee4275"
+              },
+              "content": [
+                {
+                  "attrs": {
+                    "localId": "3de7508d19c5"
+                  },
+                  "content": [
+                    {
+                      "text": "Update list logic to make grouping the default behavior:",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                },
+                {
+                  "attrs": {
+                    "localId": "2dfd152e8273"
+                  },
+                  "content": [
+                    {
+                      "attrs": {
+                        "localId": "1bf61bdd2050"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "3a7d7217a4ae"
+                          },
+                          "content": [
+                            {
+                              "text": "Group by project name by default",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "83a49b492673"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "ffae4e2ee7c9"
+                          },
+                          "content": [
+                            {
+                              "text": "Show latest version",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "80d4acb541d6"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "95a9f1d2b728"
+                          },
+                          "content": [
+                            {
+                              "text": "Calculate Total contributors and then to calculate average activity just divide total commits on weeks since creation. ",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    }
+                  ],
+                  "type": "bulletList"
+                }
+              ],
+              "type": "listItem"
+            },
+            {
+              "attrs": {
+                "localId": "e8d55d10af1d"
+              },
+              "content": [
+                {
+                  "attrs": {
+                    "localId": "830bfec3b292"
+                  },
+                  "content": [
+                    {
+                      "text": "Add a checkbox option: ",
+                      "type": "text"
+                    },
+                    {
+                      "marks": [
+                        {
+                          "type": "strong"
+                        }
+                      ],
+                      "text": "“Sort by created date” ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "that FE can pass when request the list",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                },
+                {
+                  "attrs": {
+                    "localId": "170726240b8c"
+                  },
+                  "content": [
+                    {
+                      "attrs": {
+                        "localId": "7c50e242f91f"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "32b5b36cd0ea"
+                          },
+                          "content": [
+                            {
+                              "text": "When enabled, switch list to detailed mode  that we have now",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "c24e976bed14"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "9fb53462953e"
+                          },
+                          "content": [
+                            {
+                              "text": "Disable grouping logic",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "c8b3b1703702"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "4a0af30dcbbe"
+                          },
+                          "content": [
+                            {
+                              "text": "Insert Created date into the list - when project was added to workspace",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "0a7bafe56fcc"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "820a5fea137c"
+                          },
+                          "content": [
+                            {
+                              "text": "Insert Days active - how long this project has been in the workspace ",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    }
+                  ],
+                  "type": "bulletList"
+                }
+              ],
+              "type": "listItem"
+            },
+            {
+              "attrs": {
+                "localId": "7ddac7117a21"
+              },
+              "content": [
+                {
+                  "attrs": {
+                    "localId": "345ae521dd90"
+                  },
+                  "content": [
+                    {
+                      "text": "In detailed mode:",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                },
+                {
+                  "attrs": {
+                    "localId": "1c45c20e871e"
+                  },
+                  "content": [
+                    {
+                      "attrs": {
+                        "localId": "ad4a9c85eaf2"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "fb71f4c51b5d"
+                          },
+                          "content": [
+                            {
+                              "text": "Show all project entries separately (no merging, even for same name, cos it came in different versions)",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "b3737be1c832"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "49fecf71b4c6"
+                          },
+                          "content": [
+                            {
+                              "text": "Add a column ",
+                              "type": "text"
+                            },
+                            {
+                              "marks": [
+                                {
+                                  "type": "strong"
+                                }
+                              ],
+                              "text": "“Created date”",
+                              "type": "text"
+                            },
+                            {
+                              "text": " (date when project was added to workspace)",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "bc1ead537451"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "966ca984313a"
+                          },
+                          "content": [
+                            {
+                              "text": "Add column Days active - so user can see if some projects active more than 12 months ",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    },
+                    {
+                      "attrs": {
+                        "localId": "ea7292a0edfc"
+                      },
+                      "content": [
+                        {
+                          "attrs": {
+                            "localId": "d775bf9503c3"
+                          },
+                          "content": [
+                            {
+                              "text": "Display original version per entry (no consolidation)",
+                              "type": "text"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      ],
+                      "type": "listItem"
+                    }
+                  ],
+                  "type": "bulletList"
+                }
+              ],
+              "type": "listItem"
+            }
+          ],
+          "type": "orderedList"
+        },
+        {
+          "attrs": {
+            "localId": "a6e30c234b75"
+          },
+          "content": [
+            {
+              "marks": [
+                {
+                  "type": "strong"
+                }
+              ],
+              "text": "Expected result",
+              "type": "text"
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "attrs": {
+            "localId": "88b04ffa7a50",
+            "order": 1
+          },
+          "content": [
+            {
+              "attrs": {
+                "localId": "350349a4d8ff"
+              },
+              "content": [
+                {
+                  "attrs": {
+                    "localId": "8fc51361a0dd"
+                  },
+                  "content": [
+                    {
+                      "text": "By default, list shows grouped view (one row per project with total versions and latest activity).",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "type": "listItem"
+            },
+            {
+              "attrs": {
+                "localId": "9596c18047d0"
+              },
+              "content": [
+                {
+                  "attrs": {
+                    "localId": "ac3039bed816"
+                  },
+                  "content": [
+                    {
+                      "text": "When “Sort by created date” is enabled, list switches to detailed mode.",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "type": "listItem"
+            },
+            {
+              "attrs": {
+                "localId": "3a1b1caf2a27"
+              },
+              "content": [
+                {
+                  "attrs": {
+                    "localId": "c477e641d2da"
+                  },
+                  "content": [
+                    {
+                      "text": "Detailed mode shows multiple rows per project with “Created date” and original versions.",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "type": "listItem"
+            }
+          ],
+          "type": "orderedList"
+        }
+      ],
+      "type": "doc",
+      "version": 1
+    },
+    "issuetype": {
+      "avatarId": 10318,
+      "description": "Tasks track small, distinct pieces of work.",
+      "entityId": "3e0f6449-ea59-42c3-89fe-d7ee63d0bfd2",
+      "hierarchyLevel": 0,
+      "iconUrl": "https://example.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+      "id": "10001",
+      "name": "Task",
+      "self": "https://example.atlassian.net/rest/api/3/issuetype/10001",
+      "subtask": false
+    },
+    "status": {
+      "description": "",
+      "iconUrl": "https://example.atlassian.net/",
+      "id": "10000",
+      "name": "To Do",
+      "self": "https://example.atlassian.net/rest/api/3/status/10000",
+      "statusCategory": {
+        "colorName": "blue-gray",
+        "id": 2,
+        "key": "new",
+        "name": "To Do",
+        "self": "https://example.atlassian.net/rest/api/3/statuscategory/2"
+      }
+    },
+    "summary": "[BE] Add “Sort by created date” option to project list view"
+  },
+  "fieldsToInclude": null,
+  "id": "1002",
+  "key": "SAMPLE-102",
+  "names": null,
+  "operations": null,
+  "properties": null,
+  "renderedFields": null,
+  "schema": null,
+  "self": "https://example.atlassian.net/rest/api/3/issue/1002",
+  "transitions": null,
+  "versionedRepresentations": null
+}

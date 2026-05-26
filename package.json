@@ -1,0 +1,13 @@
+{
+  "name": "adf2md",
+  "version": "1.0.0",
+  "description": "Convert Atlassian Document Format (ADF) to Markdown",
+  "main": "lib/converter.js",
+  "bin": {
+    "adf2md": "bin/adf2md.js"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ]
+}
