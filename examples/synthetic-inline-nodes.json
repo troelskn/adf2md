@@ -1,0 +1,43 @@
+{
+  "key": "SYN-INLINE",
+  "fields": {
+    "summary": "Inline nodes: mention, date, status",
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "mention", "attrs": { "id": "557058:abc-123", "text": "@Alice Engineer" } },
+            { "type": "text", "text": " please review this by " },
+            { "type": "date", "attrs": { "timestamp": "1767225600000" } },
+            { "type": "text", "text": ". Current status: " },
+            { "type": "status", "attrs": { "text": "In Progress", "color": "blue" } },
+            { "type": "text", "text": "." }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "Mentions with no display text fall back to the id: " },
+            { "type": "mention", "attrs": { "id": "557058:bob-no-name" } },
+            { "type": "text", "text": "." }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "Status pills come in many colors: " },
+            { "type": "status", "attrs": { "text": "Done", "color": "green" } },
+            { "type": "text", "text": ", " },
+            { "type": "status", "attrs": { "text": "Blocked", "color": "red" } },
+            { "type": "text", "text": ", " },
+            { "type": "status", "attrs": { "text": "Backlog", "color": "neutral" } },
+            { "type": "text", "text": "." }
+          ]
+        }
+      ]
+    }
+  }
+}

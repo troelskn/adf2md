@@ -1,0 +1,31 @@
+{
+  "key": "SYN-EXPAND",
+  "fields": {
+    "summary": "Expand block",
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [{ "type": "text", "text": "Click the section below to see the full reasoning." }]
+        },
+        {
+          "type": "expand",
+          "attrs": { "title": "Implementation notes" },
+          "content": [
+            { "type": "paragraph", "content": [{ "type": "text", "text": "The actual work happens in the queue worker, but it is only shown when expanded to keep the ticket scannable." }] },
+            { "type": "paragraph", "content": [{ "type": "text", "text": "A second paragraph inside the expand body." }] }
+          ]
+        },
+        {
+          "type": "expand",
+          "attrs": { "title": "Untitled expands fall back to an empty summary" },
+          "content": [
+            { "type": "paragraph", "content": [{ "type": "text", "text": "Body content." }] }
+          ]
+        }
+      ]
+    }
+  }
+}

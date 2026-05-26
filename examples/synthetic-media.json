@@ -1,0 +1,60 @@
+{
+  "key": "SYN-MEDIA",
+  "fields": {
+    "summary": "Media nodes",
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [{ "type": "text", "text": "A single Jira attachment (no public URL — resolved via a separate Jira media API):" }]
+        },
+        {
+          "type": "mediaSingle",
+          "attrs": { "layout": "center" },
+          "content": [
+            {
+              "type": "media",
+              "attrs": {
+                "id": "8e2c5a01-9d3f-4b8a-9c2e-1234567890ab",
+                "type": "file",
+                "collection": "jira-attachments",
+                "alt": "Screenshot of the failing form"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [{ "type": "text", "text": "A single externally-linked image:" }]
+        },
+        {
+          "type": "mediaSingle",
+          "content": [
+            {
+              "type": "media",
+              "attrs": {
+                "type": "external",
+                "url": "https://example.com/diagrams/architecture.png",
+                "alt": "Architecture diagram"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [{ "type": "text", "text": "A gallery of attachments:" }]
+        },
+        {
+          "type": "mediaGroup",
+          "content": [
+            { "type": "media", "attrs": { "id": "img-001", "type": "file", "alt": "First step" } },
+            { "type": "media", "attrs": { "id": "img-002", "type": "file", "alt": "Second step" } },
+            { "type": "media", "attrs": { "id": "img-003", "type": "file", "alt": "Third step" } }
+          ]
+        }
+      ]
+    }
+  }
+}

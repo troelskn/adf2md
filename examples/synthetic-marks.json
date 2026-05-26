@@ -1,0 +1,56 @@
+{
+  "key": "SYN-MARKS",
+  "fields": {
+    "summary": "New text marks: underline, subsup, textColor, border",
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "This text is " },
+            { "type": "text", "text": "underlined", "marks": [{ "type": "underline" }] },
+            { "type": "text", "text": " and this is colored " },
+            { "type": "text", "text": "red", "marks": [{ "type": "textColor", "attrs": { "color": "#ff0000" } }] },
+            { "type": "text", "text": "." }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "Water is H" },
+            { "type": "text", "text": "2", "marks": [{ "type": "subsup", "attrs": { "type": "sub" } }] },
+            { "type": "text", "text": "O, and E = mc" },
+            { "type": "text", "text": "2", "marks": [{ "type": "subsup", "attrs": { "type": "sup" } }] },
+            { "type": "text", "text": "." }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "Marks compose freely: " },
+            {
+              "type": "text",
+              "text": "bold + italic + underline",
+              "marks": [
+                { "type": "strong" },
+                { "type": "em" },
+                { "type": "underline" }
+              ]
+            },
+            { "type": "text", "text": "." }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "The " },
+            { "type": "text", "text": "border", "marks": [{ "type": "border", "attrs": { "color": "#cccccc", "size": 2 } }] },
+            { "type": "text", "text": " mark normally applies to media boundaries; on text it is a no-op." }
+          ]
+        }
+      ]
+    }
+  }
+}

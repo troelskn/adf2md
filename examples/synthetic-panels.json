@@ -1,0 +1,47 @@
+{
+  "key": "SYN-PANELS",
+  "fields": {
+    "summary": "Panel node types",
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "panel",
+          "attrs": { "panelType": "info" },
+          "content": [
+            { "type": "paragraph", "content": [{ "type": "text", "text": "An informational message for the reader." }] }
+          ]
+        },
+        {
+          "type": "panel",
+          "attrs": { "panelType": "note" },
+          "content": [
+            { "type": "paragraph", "content": [{ "type": "text", "text": "A side note adding context." }] }
+          ]
+        },
+        {
+          "type": "panel",
+          "attrs": { "panelType": "warning" },
+          "content": [
+            { "type": "paragraph", "content": [{ "type": "text", "text": "Be careful — this change is destructive." }] }
+          ]
+        },
+        {
+          "type": "panel",
+          "attrs": { "panelType": "success" },
+          "content": [
+            { "type": "paragraph", "content": [{ "type": "text", "text": "Deployment completed successfully." }] }
+          ]
+        },
+        {
+          "type": "panel",
+          "attrs": { "panelType": "error" },
+          "content": [
+            { "type": "paragraph", "content": [{ "type": "text", "text": "Migration failed — see logs for details." }] }
+          ]
+        }
+      ]
+    }
+  }
+}
