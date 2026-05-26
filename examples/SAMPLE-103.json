@@ -1,0 +1,172 @@
+{
+  "changelog": null,
+  "editmeta": null,
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "fields": {
+    "assignee": {
+      "accountId": "557058:00000000-0000-0000-0000-000000000001",
+      "accountType": "atlassian",
+      "active": true,
+      "avatarUrls": {
+        "16x16": "https://example.com/avatar.png",
+        "24x24": "https://example.com/avatar.png",
+        "32x32": "https://example.com/avatar.png",
+        "48x48": "https://example.com/avatar.png"
+      },
+      "displayName": "Example User",
+      "emailAddress": "user@example.com",
+      "self": "https://example.atlassian.net/rest/api/3/user?accountId=557058%3A00000000-0000-0000-0000-000000000001",
+      "timeZone": "UTC"
+    },
+    "comment": {
+      "comments": [
+        {
+          "id": "20001",
+          "self": "https://example.atlassian.net/rest/api/3/issue/1003/comment/20001",
+          "author": {
+            "accountId": "557058:00000000-0000-0000-0000-000000000002",
+            "active": true,
+            "displayName": "Alice Reviewer",
+            "emailAddress": "alice@example.com"
+          },
+          "body": {
+            "type": "doc",
+            "version": 1,
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  { "type": "text", "text": "Could we also include a tooltip for the new toggle? Right now it is not obvious what " },
+                  { "type": "text", "text": "default", "marks": [{ "type": "code" }] },
+                  { "type": "text", "text": " means." }
+                ]
+              }
+            ]
+          },
+          "created": "2025-03-12T09:14:00.000+0000",
+          "updated": "2025-03-12T09:14:00.000+0000"
+        },
+        {
+          "id": "20002",
+          "self": "https://example.atlassian.net/rest/api/3/issue/1003/comment/20002",
+          "author": {
+            "accountId": "557058:00000000-0000-0000-0000-000000000003",
+            "active": true,
+            "displayName": "Bob Engineer",
+            "emailAddress": "bob@example.com"
+          },
+          "body": {
+            "type": "doc",
+            "version": 1,
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  { "type": "text", "text": "Good point. I think we should also:" }
+                ]
+              },
+              {
+                "type": "bulletList",
+                "content": [
+                  {
+                    "type": "listItem",
+                    "content": [
+                      { "type": "paragraph", "content": [{ "type": "text", "text": "Add inline help text under the field" }] }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "content": [
+                      { "type": "paragraph", "content": [{ "type": "text", "text": "Log the toggle event so we can measure usage" }] }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-03-12T14:32:00.000+0000",
+          "updated": "2025-03-12T14:35:00.000+0000"
+        },
+        {
+          "id": "20003",
+          "self": "https://example.atlassian.net/rest/api/3/issue/1003/comment/20003",
+          "author": {
+            "accountId": "557058:00000000-0000-0000-0000-000000000004",
+            "active": true,
+            "displayName": "Carol PM",
+            "emailAddress": "carol@example.com"
+          },
+          "body": {
+            "type": "doc",
+            "version": 1,
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  { "type": "text", "text": "Sounds good — let us " },
+                  { "type": "text", "text": "ship the tooltip first", "marks": [{ "type": "strong" }] },
+                  { "type": "text", "text": " and treat the analytics piece as a follow-up." }
+                ]
+              }
+            ]
+          },
+          "created": "2025-03-13T08:05:00.000+0000",
+          "updated": "2025-03-13T08:05:00.000+0000"
+        }
+      ],
+      "maxResults": 3,
+      "self": "https://example.atlassian.net/rest/api/3/issue/1003/comment",
+      "startAt": 0,
+      "total": 3
+    },
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "New users currently land on an empty dashboard with no obvious next step. Add a brief onboarding banner that points them at three common actions, and a toggle to dismiss it once they get the hang of things." }
+          ]
+        }
+      ]
+    },
+    "issuetype": {
+      "avatarId": 10318,
+      "description": "Tasks track small, distinct pieces of work.",
+      "entityId": "3e0f6449-ea59-42c3-89fe-d7ee63d0bfd2",
+      "hierarchyLevel": 0,
+      "iconUrl": "https://example.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+      "id": "10001",
+      "name": "Task",
+      "self": "https://example.atlassian.net/rest/api/3/issuetype/10001",
+      "subtask": false
+    },
+    "status": {
+      "description": "",
+      "iconUrl": "https://example.atlassian.net/",
+      "id": "10003",
+      "name": "In Progress",
+      "self": "https://example.atlassian.net/rest/api/3/status/10003",
+      "statusCategory": {
+        "colorName": "yellow",
+        "id": 4,
+        "key": "indeterminate",
+        "name": "In Progress",
+        "self": "https://example.atlassian.net/rest/api/3/statuscategory/4"
+      }
+    },
+    "summary": "[FE] Add onboarding banner with quick-start actions"
+  },
+  "fieldsToInclude": null,
+  "id": "1003",
+  "key": "SAMPLE-103",
+  "names": null,
+  "operations": null,
+  "properties": null,
+  "renderedFields": null,
+  "schema": null,
+  "self": "https://example.atlassian.net/rest/api/3/issue/1003",
+  "transitions": null,
+  "versionedRepresentations": null
+}
