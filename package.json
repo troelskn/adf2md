@@ -4,7 +4,10 @@
   "description": "Convert Atlassian Document Format (ADF) to Markdown",
   "main": "lib/converter.js",
   "bin": {
-    "adf2md": "bin/adf2md.js"
+    "adf2md": "bin/adf2md"
+  },
+  "scripts": {
+    "build": "node build.js"
   },
   "files": [
     "lib",
