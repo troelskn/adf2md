@@ -81,3 +81,7 @@ The CLI auto-detects what it's given:
 
 Unsupported ADF node or mark types are reported on stderr as warnings;
 they don't fail the conversion.
+
+## Acknowledgement
+
+This code started out as a copy of [julianlam/adf-to-md](https://github.com/julianlam/adf-to-md)
